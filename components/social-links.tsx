@@ -6,14 +6,14 @@ const SocialMediaLinks = () => {
   return (
     <div className="flex flex-row gap-4">
       <a
-        href="https://github.com/TheRanomial"
+        href="https://github.com/Nitika89"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FontAwesomeIcon icon={faGithub} size="1x" />
       </a>
       <a
-        href="http://www.linkedin.com/in/himanshu-singh-963044259"
+        href="https://www.linkedin.com/in/prerit-tyagi-89578a209"
         target="_blank"
         rel="noopener noreferrer"
       >

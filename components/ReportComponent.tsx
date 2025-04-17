@@ -206,6 +206,7 @@ const ReportComponent: FC<Props> = ({ onReportConfirmation }: Props) => {
           </div>
         )}
 
+        {/* Enhanced Tab UI */}
         <div className="grid grid-cols-2 gap-2 w-full border rounded-lg overflow-hidden shadow-sm">
           <button
             onClick={() => setActiveTab("text")}
@@ -231,6 +232,7 @@ const ReportComponent: FC<Props> = ({ onReportConfirmation }: Props) => {
           </button>
         </div>
 
+        {/* File Upload Area */}
         <div className="py-4">
           <div className="border-2 border-dashed border-indigo-200 dark:border-gray-600 rounded-lg p-6 text-center">
             <div className="mb-4">
@@ -287,6 +289,8 @@ const ReportComponent: FC<Props> = ({ onReportConfirmation }: Props) => {
             </p>
           </div>
         </div>
+
+        {/* Extract Button */}
         <Button
           onClick={extractDetails}
           className="w-full bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-700 dark:hover:bg-indigo-600 text-white font-medium py-2 flex items-center justify-center gap-2"
@@ -305,6 +309,8 @@ const ReportComponent: FC<Props> = ({ onReportConfirmation }: Props) => {
             </>
           )}
         </Button>
+
+        {/* Report Data Textarea */}
         <div className="relative">
           <Textarea
             value={reportData}
@@ -320,6 +326,7 @@ const ReportComponent: FC<Props> = ({ onReportConfirmation }: Props) => {
           />
         </div>
 
+        {/* Finalize Button */}
         <Button
           className="w-full bg-emerald-600 hover:bg-emerald-700 dark:bg-emerald-700 dark:hover:bg-emerald-600 text-white font-medium py-2"
           onClick={() => {
@@ -329,6 +336,8 @@ const ReportComponent: FC<Props> = ({ onReportConfirmation }: Props) => {
         >
           2. Finalize {activeTab === "text" ? "Report" : "Speech Analysis"}
         </Button>
+
+        {/* Social Media Links */}
         <div className="flex flex-row items-center justify-center gap-3 pt-2 border-t border-gray-200 dark:border-gray-700 mt-2">
           <Label className="text-gray-600 dark:text-gray-400">
             Share your experience
