@@ -70,3 +70,52 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes slowPulse {
+  0% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.25;
+    transform: scale(1.05);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out forwards;
+}
+.animate-fadeInScale {
+  animation: fadeInScale 0.8s ease-out forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
